@@ -4,6 +4,9 @@ int main(){
 int n;    
 int temp;
 int j;
+int somma=0;
+int prodotto=0;
+
 do{
 printf("Inserire la dimensione del vettore: ");    
 scanf("%d",&n);    
@@ -38,6 +41,18 @@ printf("\nadesso ordiniamo con insertion sort\n");
 
 
 
+ printf("\nVETTORE ORDINATO\n");
+
+  for (int i = 0; i < n; i++){
+    printf("%d ", V[i]);  
+    somma=somma+V[i];  
+       }
+       
+printf("\nLa somma degli elementi del vettore è: %d\n",somma);    
+  prodotto=somma*n;
+  printf("\nIl prodotto tra somma e la dimensione del vettore è: %d\n",prodotto);  
+
+  return 0;
 
 
 
